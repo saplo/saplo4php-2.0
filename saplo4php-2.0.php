@@ -110,7 +110,7 @@ class SaploAPI {
 		return $this-endpoint;
 	}
 
-	static function getAccessToken() {
+	public function getAccessToken() {
 		return $this->token;
 	}
 
