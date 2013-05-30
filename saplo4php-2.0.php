@@ -75,6 +75,8 @@ class SaploAPI {
 		curl_setopt($ch,CURLOPT_POST,$postlength);
 		curl_setopt($ch,CURLOPT_POSTFIELDS,$requestJson);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_SSLVERSION, 3);
+
 
 		$response = curl_exec($ch);
 
