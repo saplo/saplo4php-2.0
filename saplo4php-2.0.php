@@ -75,7 +75,7 @@ class SaploAPI {
 		curl_setopt($ch,CURLOPT_POST,$postlength);
 		curl_setopt($ch,CURLOPT_POSTFIELDS,$requestJson);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_SSLVERSION, 3);
+		curl_setopt($ch, CURLOPT_SSLVERSION, 1);
 
 
 		$response = curl_exec($ch);
@@ -109,7 +109,7 @@ class SaploAPI {
 	}
 
 	private function getEndpoint() {
-		return $this-endpoint;
+		return $this->endpoint;
 	}
 
 	public function getAccessToken() {
