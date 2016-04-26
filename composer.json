@@ -1,0 +1,23 @@
+{
+    "name": "saplo/saplo4php-2.0",
+    "description": "Saplo API library",
+    "type": "",
+    "authors": [
+        {
+            "name": "horte"
+        },
+        {
+            "name": "Emil Österlund",
+            "email": "emil@dalnix.se"
+        }
+    ],
+    "require": {
+        "lib-curl": "^7.38"
+    },
+    "autoload": {
+        "psr-4" : {
+            "saplo":"src/"
+        }
+    }
+
+}
